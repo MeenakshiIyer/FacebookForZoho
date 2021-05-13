@@ -310,14 +310,30 @@
                 function (response2) {
                 if (response2 && !response2.error) {
                     /* handle the result */
-                    
-                    FB.api("/"+response2.id+"/feed",
-                        function (response3) {
-                        if (response3 && !response3.error) {
-                            /* handle the result */
-                            console.log(response3);
+                    FB.ui(
+                    {
+                        method: 'share',
+                        href: 'https://developers.facebook.com/docs/',
+                    },
+                    // callback
+                    function(response) {
+                        if (response && !response.error_message) {
+                        alert('Posting completed.');
+                        } else {
+                        alert('Error while posting.');
                         }
                     });
+                    FB.ui({
+                        method: 'feed',
+                        link: 'https://developers.facebook.com/docs/'
+                    }, function(response){console.log(response)});
+                    // FB.api("/"+response2.id+"/feed",
+                    //     function (response3) {
+                    //     if (response3 && !response3.error) {
+                    //         /* handle the result */
+                    //         console.log(response3);
+                    //     }
+                    // });
                 }
                 });
           });
