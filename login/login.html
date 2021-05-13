@@ -308,28 +308,28 @@
               id= response.id;
               FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,picture.width(150).height(150)'}, function(response2) {
 
-                var canvas = document.createElement('canvas');
-                var image = new Image();
-                var ctx = canvas.getContext('2d');
+                // var canvas = document.createElement('canvas');
+                // var image = new Image();
+                // var ctx = canvas.getContext('2d');
 
-                image.onload = function()
-                {
-                    canvas.width = image.width;
-                    canvas.height = image.height;
+                // image.onload = function()
+                // {
+                //     canvas.width = image.width;
+                //     canvas.height = image.height;
 
-                    ctx.drawImage(image, 0, 0);
+                //     ctx.drawImage(image, 0, 0);
 
-                    var dataURL = canvas.toDataURL('image/png');
+                //     var dataURL = canvas.toDataURL('image/png');
 
-                    var Base64StringImage = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+                //     var Base64StringImage = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 
-                    localStorage.setItem('image', Base64StringImage);
+                //     localStorage.setItem('image', Base64StringImage);
 
-                    //read from localStorage:
-                    document.querySelector('img').src = 'data:image/png;base64,' + localStorage.getItem('image');
-                };
+                //     //read from localStorage:
+                //     document.querySelector('img').src = 'data:image/png;base64,' + localStorage.getItem('image');
+                // };
 
-                image.src = response2.picture.data.url;
+                // image.src = response2.picture.data.url;
 				document.getElementById('status').innerHTML = "<img src='" + response2.picture.data.url + "'>";
 			  });
                 });
