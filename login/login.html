@@ -263,6 +263,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0&appId=2985399068448492&autoLogAppEvents=1" nonce="2Rapld1R"></script>
 
     <main class="">
         <header class="container-fluid">
@@ -284,7 +286,8 @@
                                 <input type="password" class="form-control form-control-sm" id="inputPassword4">
                                 <a class="forgot-link" href="#">Forgot Password?</a>
                             </div>
-                            <button type="submit" class="btn col-md- mt-4">Log In</button>
+                            <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                            <!-- <button type="submit" class="btn col-md- mt-4">Log In</button> -->
                         </div>
                     </form>
                 </div>
@@ -506,7 +509,7 @@
     </script>
     
 <script>
-    var FB;
+    /*var FB;
 window.fbAsyncInit = function() {
     FB = FB;
     FB.init({
@@ -541,7 +544,7 @@ window.fbAsyncInit = function() {
    }(document, 'script', 'facebook-jssdk'));
    
    
-     
+     */
 </script>
 </body>
 
