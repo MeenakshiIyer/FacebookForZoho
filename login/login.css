@@ -1,0 +1,251 @@
+h1 {
+    color: #0e385f;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+header.container-fluid {
+    height: 80px;
+    background-color: #3b5998;
+}
+
+header a {
+    color: #9cb4d8;
+}
+
+header div.header-a {
+    background-color: #3b5998;
+    height: 40px;
+}
+
+header img.header-logo {
+    height: 40px;
+}
+
+header div.form-login {
+    background-color: #3b5998;
+    height: 40px;
+}
+
+header div.form-login-data label {
+    color: #fff;
+}
+
+header div.form-login-data input {
+    border-radius: 0;
+}
+
+header div.form-login-data button[type=submit] {
+    border-radius: 0;
+    height: 30px;
+    background-color: #3b5998;
+    color: #fff;
+    border-color: #29487d;
+    border-style: solid;
+    font-weight: 700;
+}
+
+section.container-fluid {
+    height: 650px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(253, 253, 254, 1) 2%, rgba(228, 231, 241, 1) 64%, rgba(212, 217, 233, 1) 96%, rgba(211, 216, 232, 1) 100%);
+}
+
+section h1 {
+    font-size: 1.5em;
+
+}
+
+section aside.col-md-6 {
+    background: linear-gradient(180deg, linear-gradient(180deg, rgba(254, 254, 254, 1) 16%, rgba(239, 240, 246, 1) 44%))
+}
+
+section aside form p {
+    color: grey;
+}
+
+footer ul.list-group-horizontal-md {
+    list-style: none;
+}
+
+footer ul.content-curve {
+    border-bottom: 1px solid #DDDFE2;
+    color: #737373;
+    text-decoration: none solid rgb(115, 115, 115);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    header.container-fluid {
+        height: 340px;
+    }
+
+    header div.form-login {
+        margin-top: 50px !important;
+    }
+
+    header div.form-login-data button[type=submit] {
+        background-color: #3b5998;
+        color: #fff;
+        border-color: #29487d;
+        border-style: solid;
+        width: 100%;
+    }
+
+    section.container-fluid {
+        height: 1100px;
+    }
+
+    section h1 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    section aside {
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+
+    section form div.form-birthday select {
+        margin: 0 0 10px 0;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    footer ul.list-group-horizontal-md {
+        padding: 0;
+    }
+
+    footer ul.content-curve {
+        width: 99%;
+    }
+
+    footer ul.copyright {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    header div.form-login-data {
+        margin: -15px 0 0 0;
+    }
+
+    header div.form-login label {
+        font-size: .7em;
+    }
+
+    header div.form-login-data label.label-pass {
+        margin: 0 0 0 50px;
+    }
+
+    header div.form-login input {
+        width: 120px;
+    }
+
+    header div.form-login input[type=email] {
+        margin: 0 10px 0 0;
+    }
+
+    header div.form-login input[type=password] {
+        margin: 0 0 0 50px;
+    }
+
+    header div.form-login button[type=submit] {
+        margin: 0 0 0 100px;
+    }
+
+    header div.form-login-data a {
+        font-size: .6em;
+        margin: 0 0 0 0px;
+    }
+
+    section aside form input#input-firstname {
+        width: 150px;
+    }
+
+    section aside form input#input-lastname {
+        margin: 0 0 0 40px;
+        width: 150px;
+    }
+
+    section aside form input[type=email],
+    input[type=password] {
+        width: 310px;
+    }
+
+    section aside div.form-birthday select {
+        max-width: 25%;
+    }
+
+    footer ul.content-curve {
+        margin: 0 0 0 38px;
+        width: 88%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1023.8px) and (max-width: 1200px) {
+    header div.form-login {
+        font-size: 10px;
+    }
+
+    header div.form-login-data button[type=submit] {
+        margin-top: 16px !important;
+    }
+
+    footer ul.content-curve {
+        margin: 0 0 0 40px;
+        width: 94%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    div.form-login-data {
+        margin: -15px 0 0 15px;
+    }
+
+    div.form-login-data input {
+        font-size: 12px;
+        text-decoration: none solid rgb(0, 0, 0);
+        word-spacing: 0;
+    }
+
+    img.img-fluid.mt-5.ml-5 {
+        margin-right: 90px;
+    }
+
+    img.aside-img {
+        height: 250px;
+        margin: 0 0 0 170px;
+        width: 500px;
+    }
+
+    h1 {
+        margin-left: 200px;
+        text-decoration: none solid rgb(14, 56, 95);
+        word-spacing: -1px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    footer ul.content-curve {
+        margin: 0 0 0 40px;
+        width: 1050px;
+    }
+}
