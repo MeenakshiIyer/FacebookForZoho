@@ -300,10 +300,29 @@
        
         function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
           console.log('Welcome!  Fetching your information.... ');
+          var id = ''
           FB.api('/me', function(response) {
-            console.log('Successful login for: ' + response.name);
+            console.log('Successful login for: ' + response);
             document.getElementById('status').innerHTML =
               'Thanks for logging in, ' + response.name + '!';
+              id= response.id;
+              FB.api("/"+id+"/feed",
+                function (response) {
+                if (response && !response.error) {
+                    /* handle the result */
+                    console.log(response);
+                }
+            });
+          });
+          
+          var body = 'Reading JS SDK documentation';
+          FB.api('/me/feed', 'post', { message: body }, function(response) {
+              console.log(response);
+            if (!response || response.error) {
+                alert('Error occured');
+            } else {
+                alert('Post ID: ' + response.id);
+            }
           });
         }
       
