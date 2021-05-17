@@ -1099,7 +1099,7 @@ header
 }
 footer.panel-footer {
     padding-top: 15px;
-    float: right;
+    /* float: right; */
 }
 
 body{
@@ -1313,4 +1313,16 @@ img {
 }
 .flex1 {
     margin-top: 20px;;
+}
+.ulclass{
+    list-style: none;
+    display: inline;
+    padding: 0;
+}
+ul.ulclass li {
+    display: inline;
+}
+.btn-info {
+    float: right;
+    margin-top: -10px;
 }
